@@ -1,0 +1,145 @@
+LMB         Left Mouse Bouton : Select
+Alt + LMB   Select Loop
+
+Ctrl + L    Select Loop
+Shift + LMB Add / Remove Select
+Ctrl + L    Select All Linked
+A           Select All
+B           Select Fenetre
+C           Select Pinceauf
+    Ctrl + '+' or '-'  Select More or Less
+
+
+TAB         Object / Edit Mode
+
+M           Move (change) Selected to a layer
+
+F3          Save Image (after render)
+
+##########################################################
+View:
+1, 3 or 7   Vu XZ
+Ctrl + 1    Vu XZ inv
+
+Z           Vue Filaire / 3D
+Shift + Z   Vue Rendu
+Ctrl + B    Rendu d'une zone pour aller plus vite
+
+Shift + F3  Node View
+T           Volet Tools
+N           Volet Coordonnees, Camera, ...  
+
+Shift + Left go to Start
+Alt + A     Play/Pause
+
+
+Ctrl + L and Modifier to set same for objects selected
+
+S           Scale
+R           Rotate
+G           Grab
+G x2        Grab le long de la géom
+E           Extrude
+    X, Y or Z to choose axis
+    Shift + Z to choose X and Y axis
+    
+F           Fill
+Alt + F     Fill
+
+Shift + A   Ajouter un element
+Shift + D   Dupliquer
+
+Crtl + B    Bevel
+
+Shift + S   Snap (cursor to center)
+
+Ctrl + A    Apply Scale, Location and Rotation
+            permet d'avoir à nouveau l'objet à l'échelle 1 (pour Blender)
+
+Ctrl + J    Join selected objects
+
+
+##########################################################
+Edit Mode:
+P           Separate selected to Part
+Ctrl + R    Add loop
+Shift + E   Crease +/- 1 pour modify smooth diameter
+
+
+H           Hide unselected
+Alt + H     unhide
+Shift + E   Hard Edge
+
+Ctrl + N    Recalculate Normals
+W           Menu for Subdivide
+
+U           UV Map Menu
+
+Tools / Remove Doubles
+Shading/UVs / Recalculate (Normals)
+
+
+##########################################################
+Place Camera
+Select Camera
+ and Alt+G and Alt+R put the Camera at the Cursor
+ 
+Select Camera / Shift Select Object to Track
+ Ctrl+T / Track to Constraint
+ == Add Object Constraint / Track To / -Z / Y
+
+
+##########################################################
+Unwrap a Sphere in Edit Mode
+(removes poles)
+Select edges (ex: Alt+LMB)
+Ctrl+E : Edges menu
+  Mark Seam
+  
+U : UV Mapping menu
+  Sphere Projection
+
+
+# Parent two Object
+Ctrl + P (ex: Camera / Shift / Empty / Ctrl + P / Object, allow to link Empty Rotation to the Camera
+
+# Anim
+# Go to Frame 0
+I : add key Frame
+Rotation
+180° and go to frame 30
+I / Rotation
+360° and go to frame 30
+I / Rotation
+
+# Graph Editor
+Select Curve
+T : change interpolation
+choose Linear
+
+
+
+  
+# Python
+import bpy
+from math import radians
+
+cam = bpy.data.objects['Camera']
+origin = bpy.data.objects['Empty']
+
+step_count = 32
+
+for step in range(0, step_count):
+    origin.rotation_euler[2] = radians(step * (360.0 / step_count))
+
+    bpy.data.scenes["Scene"].render.filepath = 'D:\\mesDoc\\Blender\\pyCube\\pyCube%d.jpg' % step
+    bpy.ops.render.render( write_still=True )
+    
+    
+
+bpy.app.handlers.render_pre.append(function_name)
+
+
+
+
+
