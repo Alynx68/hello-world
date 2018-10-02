@@ -73,6 +73,8 @@ Shift + E   Hard Edge
 Ctrl + N    Recalculate Normals
 W           Menu for Subdivide
 
+K           Knife
+
 U           UV Map Menu
 
 Tools / Remove Doubles
@@ -91,14 +93,19 @@ Select Camera / Shift Select Object to Track
 
 ##########################################################
 Unwrap a Sphere in Edit Mode
+
+L with the mouse over : Select UV map part
+
 (removes poles)
 Select edges (ex: Alt+LMB)
-Ctrl+E : Edges menu
+Ctrl+E : Edges menu (Available in Tool/ Shading/UVs)
   Mark Seam
-  
+
 U : UV Mapping menu
   Sphere Projection
-
+  
+  Unwrap
+  UV/Image Editor : Select part without circle and Appli Alt-E to Straighten (Addons: Mash: UV Squares)
 
 # Parent two Object
 Ctrl + P (ex: Camera / Shift / Empty / Ctrl + P / Object, allow to link Empty Rotation to the Camera
