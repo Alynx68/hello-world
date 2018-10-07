@@ -46,8 +46,8 @@ E           Extrude
 F           Fill
 Alt + F     Fill
 
-Shift + A   Ajouter un element
-Shift + D   Dupliquer
+Shift + A   Add an element
+Shift + D   Duplicate
 
 Crtl + B    Bevel
 
