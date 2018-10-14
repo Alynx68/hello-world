@@ -12,20 +12,26 @@
 Ctrl+T
 
 ### Code
+Python
 ```python
+import os
 import sys
 
 for p in sys.path:
   print(p)
+
+os.system("PAUSE")
 ```
+Julia
 ```julia
-println("Toto")
+println("Pi")
 ```
+C++
 ```c++
 #include <iostream>
 int main()
 {
-  std::cout << "Toto" << std::endl;
+  std::cout << "Pi" << std::endl;
   return 0;
 }
 ```
