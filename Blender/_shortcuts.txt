@@ -83,6 +83,7 @@ Shading/UVs / Recalculate (Normals)
 
 ##########################################################
 Place Camera
+Ctrl+Alt : Place Camera at current view
 Select Camera
  and Alt+G and Alt+R put the Camera at the Cursor
  

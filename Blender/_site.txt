@@ -15,6 +15,7 @@ How to Render Fire in Cycles
 https://www.youtube.com/watch?v=u-zK7Bu8cAI
 
 # Blender HDR
+https://hdrihaven.com/
 # Software
 http://qtpfsgui.sourceforge.net/  # Luminance HDR
 https://github.com/dariomanesku/cmftStudio
@@ -32,6 +33,8 @@ https://cgcookiemarkets.com/all-products/five-16k-hdris-hdri-haven-teaser-pack/?
 
 https://www.poliigon.com/
 https://www.poliigon.com/search/recent/narrow/list/free%20textures
+alain.hild@gmail.com
+new
 
 http://www.texturemate.com/category/image-galleries/granite
 
@@ -68,6 +71,9 @@ https://fonts.google.com/
 http://www.detail.ist/magazine/
 https://pixabay.com/
 http://www.textures.com/
+
+# resources
+http://www.toxictuba.net/?page=Links-Blender#pbr
 
 
 # Police de caractères

@@ -21,9 +21,15 @@
 3. ReText
 3. NotePad++ MarkdownViewer++
 3. P4 Editor : Online
+4. Pandoc
 3. [www.slant.co/topics/1852/~best-markdown-editors-for-windows](https://www.slant.co/topics/1852/~best-markdown-editors-for-windows)
 3. reMarkable (Tablet)
 3. UberWriter (Linux only)
+
+# Midnight Commander for Windows
+1. Double Commander
+2. spacemacs
+3. Nomad
 
 ### Checklist
  - [x] Yes
